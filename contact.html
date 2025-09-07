@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact the York Markham MSA — email, Instagram, prayer room location, and a quick message form." />
+  <title>Contact | York Markham MSA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <img src="images/logo.png" alt="York Markham MSA logo" class="logo" width="256" height="256" />
+
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+    <label for="menu-toggle" class="hamburger-icon" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </label>
+
+    <nav class="nav-menu" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active" aria-current="page">Contact Us</a>
+    </nav>    
+  </header>
+
+  <section class="contact">
+    <h1>Contact Us</h1>
+
+    <div class="contact-info">
+      <h2>Other Ways to Connect</h2>
+      <p>Email us anytime: <a href="mailto:info@yorkmsa.com">info@yorkmsa.com</a></p>
+      <p>Follow us on Instagram: <a href="https://www.instagram.com/york_markham_msa" target="_blank" rel="noopener">@york_markham_msa</a></p>
+      <p>Prayer Room: York University Markham Campus, Room 203</p>
+      <p><a href="mailto:info@yorkmsa.com" class="cta-button">Join the Team</a></p>
+    </div>
+
+    <div class="container">
+      <form id="contact-form" action="action_page.php" method="post" novalidate>
+        <div style="position:absolute; left:-9999px; top:auto; width:1px; height:1px; overflow:hidden;">
+          <label for="hp">Do not fill this field</label>
+          <input type="text" id="hp" name="website" tabindex="-1" autocomplete="off" />
+        </div>
+
+        <label for="fname">First Name</label>
+        <input
+          type="text"
+          id="fname"
+          name="firstname"
+          placeholder="Your name.."
+          minlength="2"
+          required
+          autocomplete="given-name"
+        />
+
+        <label for="lname">Last Name</label>
+        <input
+          type="text"
+          id="lname"
+          name="lastname"
+          placeholder="Your last name.."
+          minlength="2"
+          required
+          autocomplete="family-name"
+        />
+
+        <label for="subject">Subject</label>
+        <textarea
+          id="subject"
+          name="subject"
+          placeholder="Write something.."
+          rows="6"
+          minlength="5"
+          required
+        ></textarea>
+
+        <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <p>© 2025 York Markham MSA</p>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="index.html">Home</a> |
+        <a href="about.html">About</a> |
+        <a href="contact.html" class="active" aria-current="page">Contact</a>
+      </nav>      
+      <p class="footer-contact">
+        Email: <a href="mailto:info@yorkmsa.com">info@yorkmsa.com</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
